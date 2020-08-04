@@ -17,11 +17,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('https://www.google.com/')
 
-WebUI.setText(findTestObject('Page_Google/input_ng nhp_q'), 'Lien Minh Huyen Thoai')
+WebUI.setText(findTestObject('Page_Google/input_ng nhp_q'), findTestData('search').getValue(1, 2))
 
 WebUI.submit(findTestObject('Page_Google/input_Xa_btnK'))
 
 WebUI.delay(2)
-
-WebUI.click(findTestObject('Page_lin minh huyn thoi - Tm vi Google/h3_Lin Minh Huyn ThoiGame online hay nht 2016'))
 
