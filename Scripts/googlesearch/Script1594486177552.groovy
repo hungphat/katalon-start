@@ -24,11 +24,11 @@ lucky = findTestData('search').getValue(2, 1)
 System.out.println(lucky)
 
 if (lucky == 0) {
-    WebUI.click(findTestObject('Page_Google/search_button'))
+    WebUI.click(findTestObject('null'))
 } else {
     System.out.println(lucky)
 
-    WebUI.click(findTestObject('Page_Google/input_Xa_btnI'))
+    WebUI.click(findTestObject('null'))
 }
 
 WebUI.delay(5)
