@@ -17,9 +17,21 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('https://www.google.com/')
 
-WebUI.setText(findTestObject('Page_Google/input_ng nhp_q'), findTestData('search').getValue(1, 2))
+WebUI.setText(findTestObject('Page_Google/input_ng nhp_q'), findTestData('search').getValue(1, 1))
 
-WebUI.submit(findTestObject('Page_Google/input_Xa_btnK'))
+lucky = findTestData('search').getValue(2, 1)
 
-WebUI.delay(2)
+System.out.println(lucky)
+
+if (lucky == 0) {
+    WebUI.click(findTestObject('Page_Google/search_button'))
+} else {
+    System.out.println(lucky)
+
+    WebUI.click(findTestObject('Page_Google/input_Xa_btnI'))
+}
+
+WebUI.delay(5)
+
+WebUI.closeBrowser()
 
