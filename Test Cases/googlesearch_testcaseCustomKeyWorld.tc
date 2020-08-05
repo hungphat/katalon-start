@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>googlesearch_testcaseCustomKeyWorld</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1b065976-09ae-4764-8f1f-f14f692cc4e2</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9ac361e7-627c-42f0-83f1-6d9c48a566c5</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>
