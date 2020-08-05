@@ -15,23 +15,43 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://www.google.com/')
+n = findTestData('search').getRowNumbers()
 
-WebUI.setText(findTestObject('Page_Google/input_ng nhp_q'), findTestData('search').getValue(1, 1))
+HashMap<String, String> dict = new HashMap<String, String>();
 
-lucky = findTestData('search').getValue(2, 1)
 
-System.out.println(lucky)
-
-if (lucky == 0) {
-    WebUI.click(findTestObject('null'))
-} else {
-    System.out.println(lucky)
-
-    WebUI.click(findTestObject('null'))
+for (def i : (1..n)) {
+	
+	
+		HashMap<String, String> value = new HashMap<String, String>();	
+		
+		value.put('search_case',findTestData('search').getValue('search_case', i))
+		
+		value.put('lucky',findTestData('search').getValue('lucky', i))
+		
+		key   = findTestData('search').getValue('tc_num', i)
+				
+		dict.put(key,value)
+					
 }
 
-WebUI.delay(5)
 
-WebUI.closeBrowser()
+    WebUI.openBrowser('https://www.google.com/')
+
+    WebUI.setText(findTestObject('Page_Google/input_ng nhp_q'), dict.get('tc1').get('search_case'))
+
+    lucky =  dict.get('tc1').get('lucky')
+
+    System.out.println(lucky)
+
+    if (lucky == 0) {
+        WebUI.click(findTestObject('Page_Google/search_button'))
+    } else {
+        WebUI.click(findTestObject('Page_Google/lucky_button'))
+    }
+    
+    WebUI.delay(5)
+
+    WebUI.closeBrowser()
+
 
