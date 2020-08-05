@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>googlesearch_testcase2</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7b89ddd8-10ce-433b-ad13-cef3e420ca8e</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e690f68a-5602-4196-b7f2-b41e6edc7c6e</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>

@@ -15,7 +15,7 @@
       <guid>d4d0fe89-92e7-4c7e-8c58-b640af4c5d5c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/googlesearch</testCaseId>
+      <testCaseId>Test Cases/googlesearch_testcase1</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

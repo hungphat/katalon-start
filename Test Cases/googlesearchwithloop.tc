@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>googlesearch</name>
+   <name>googlesearchwithloop</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>5bd61f22-6c97-4184-9fc2-f3ca0a030abc</testCaseGuid>
+   <testCaseGuid>5a5170ba-1da6-439c-a1f2-ddd59457422f</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>66a7e56f-f6a3-4cc9-87d4-42d03ae2f485</id>
+      <id>75edd267-1317-4c23-9ad8-8fc1f2718d94</id>
       <masked>false</masked>
       <name>variable</name>
    </variable>

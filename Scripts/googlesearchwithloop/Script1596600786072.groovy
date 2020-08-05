@@ -21,8 +21,7 @@ HashMap<String, String> dict = new HashMap<String, String>();
 
 
 for (def i : (1..n)) {
-	
-	
+		
 		HashMap<String, String> value = new HashMap<String, String>();	
 		
 		value.put('search_case',findTestData('search').getValue('search_case', i))
@@ -35,12 +34,17 @@ for (def i : (1..n)) {
 					
 }
 
-
+for (Map.Entry<String, Object> entry : dict.entrySet()) {
+	
+    String key = entry.getKey();
+	
+    Object val = entry.getValue();
+	
     WebUI.openBrowser('https://www.google.com/')
 
-    WebUI.setText(findTestObject('Page_Google/input_ng nhp_q'), dict.get('tc1').get('search_case'))
+    WebUI.setText(findTestObject('Page_Google/input_ng nhp_q'), dict.get(key).get('search_case'))
 
-    lucky =  dict.get('tc1').get('lucky')
+    lucky =  dict.get(key).get('lucky')
 
     System.out.println(lucky)
 
@@ -53,5 +57,4 @@ for (def i : (1..n)) {
     WebUI.delay(5)
 
     WebUI.closeBrowser()
-
-
+}
